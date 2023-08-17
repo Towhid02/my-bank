@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/bank_fav.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Fahim bank</title>
+</head>
+<body >
+<main class="bg-slate-200 max-w-screen-4xl mx-auto px-8 md:px16 lg:px-24 py-5 my-10">
+<section class="max-w-screen-2xl mx-auto px-8 md:px16 lg:px-24 py-5 my-10">
+<div>
+    <h1 class="text-4xl text-center text-green-900 font-bold">Your Account</h1>
+</div>
+</section>
+<section class="max-w-screen-2xl mx-auto px-8 md:px16 lg:px-24 py-5 my-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-green-400 p-8 rounded-xl">
+        <h4 class="text-3xl">Deposit</h4>
+        <h2 class="text-4xl">$<span id="deposit-total"> 100 </span></h2>
+    </div>
+    <div class="bg-yellow-400 p-8 rounded-xl">
+        <h4 class="text-3xl">Withdraw</h4>
+        <h2 class="text-4xl">$<span id="withdraw-total"> 00 </span></h2>
+    </div>
+    <div class="bg-violet-400 p-8 rounded-xl">
+        <h4 class="text-3xl">Balance</h4>
+        <h2 class="text-4xl">$<span id="balance-total"> 5000 </span></h2>
+    </div>
+</div>
+</section>
+<section  class="max-w-screen-2xl mx-auto px-8 md:px16 lg:px-24 py-5 my-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="bg-green-400 p-8 rounded-xl">
+            <h4 class="text-3xl">Please Deposit</h4>
+            <input id="deposit-field" class="block mb-4 px-5 w-10/12 py-2 mt-4 rounded-xl" type="text" placeholder="$Amount of deposit">
+            <button id="btn-deposit" class="btn btn-outline bg-white  btn-accent">DEPOSIT</button>
+        </div>
+        <div class="bg-yellow-400 p-8 rounded-xl">
+            <h4 class="text-3xl">Please Withdraw</h4>
+            <input id="withdraw-field" class="block mb-4 px-5 w-10/12 py-2 mt-4 rounded-xl" type="text" placeholder="$Amount of withdraw">
+            <button id="btn-withdraw" class="btn btn-outline bg-white  btn-accent">WITHDRAW</button>
+        </div>
+    </div>
+</section>
+</main>
+
+
+
+<script src="js/depoist.js"></script>
+<script src="js/withdraw.js"></script>
+</body>
+</html>
